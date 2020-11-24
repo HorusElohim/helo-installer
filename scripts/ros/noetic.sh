@@ -5,7 +5,7 @@ User="mark"
 WS="/opt/ros-noetic-ws"
 
 # Install Pre-requisite
-sudo apt-get install python3-rosdep python3-rosinstall-generator python3-vcstool build-essential
+sudo apt-get install python3-rosdep2 python3-rosinstall-generator python3-vcstools build-essential
 
 # Initializinf rosdep
 sudo rosdep init
