@@ -1,5 +1,7 @@
 #! /bin/bash
 
+SHELL := /bin/bash
+
 # Install git if needed
 sudo apt install -y git curl
 
