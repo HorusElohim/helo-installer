@@ -1,3 +1,7 @@
 # zsh-helo-installer
 
-Zsh plugin to install libs.
+run: 
+
+sh -c "$(wget https://raw.github.com/HorusElohim/zsh-helo-installer/master/init/install.sh -O -)"
+
+

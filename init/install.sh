@@ -12,7 +12,7 @@ sudo chown -R mark: /mark
 pushd /mark 
 
 	# Create git folder structure
-	mkdir -r /mark/git/{horuselohim,mark,akka}
+	mkdir -p /mark/git/{horuselohim,mark,akka}
 
 	# Install Libs
 	in horuselohim
