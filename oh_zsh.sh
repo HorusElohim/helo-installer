@@ -21,6 +21,7 @@ fc-cache -f -v
 popd
 
 sed -i 's/robbyrussell/powerlevel10k\/powerlevel10k/g' ~/.zshrc
+sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/g' ~/.zshrc
 
 source ~/.zshrc
 sleep 1
