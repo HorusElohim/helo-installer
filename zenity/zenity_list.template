@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# License to referee directly to the person relative at this Account HorusElohim@gmail.com
+#    ALL Copyrights Reserved To HorusElohim@gmail.com TM2021
+
+
+source lib.sh
+
+  Title="Helo Installer"
+  C1="Install"
+  C2="Path"
+  C3="Package"
+  C4="Module"
+  C5="Script"
+  C6="Description"
+
+echo -e "$(zenity `_helo_main_menu_window_size` --list --title="$Title" \
+--column="$C1" --column="$C2" --column="$C3" --column="$C4" --column="$C5" --column="$C6" \
+@list_data
+--checklist)"

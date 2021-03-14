@@ -2,7 +2,7 @@
 
 User="mark"
 Name="CLion"
-Version="203.5600.25"
+Version="211.5787.12"
 Ide="${Name}-${Version}.tar.gz"
 Link="https://download.jetbrains.com/cpp/${Ide}"
 
