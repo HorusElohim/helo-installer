@@ -5,6 +5,13 @@
 date="`date +"%Y-%m-%d"`"
 clock="`date +"%R"`"
 
+root_path () {
+echo "$(git rev-parse --show-toplevel)"
+}
+
+script_path () {
+echo "$(root_path)/scripts"
+}
 
 say () { what=$1
   echo -e "$what"
@@ -77,8 +84,7 @@ SelectRootFolder(){ _root_path=$1
 #   LoadScripts   #
 ###################
 LoadScript(){
-  # To-DO path selectable
-  find $(SelectRootFolder "../") -name "*.sh"
+  find "$(script_path)" -name "*.sh"
   }
 
 
