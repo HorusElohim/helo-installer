@@ -1,7 +1,7 @@
 #! /bin/bash
 
 
-sudo apt install -y git zenity zsh
+sudo apt install -y git zenity zsh curl
 
 git clone https://github.com/HorusElohim/zsh-helo-installer.git
 
