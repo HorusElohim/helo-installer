@@ -15,7 +15,8 @@ mkdir -p "$cache_date_dir"
 
 # Select the script to install
 tell "Now select the scripts you want install with the checkbox"
-selected_sh=$(./zenity_list.sh)
+# selected_sh=$(./zenity_list.sh)
+selected_sh=$DIR
 
 IFS='|' #setting delimiter
 read -a scripts_sel_splitted <<<"$selected_sh" #reading str as an array as tokens separated by IFS
