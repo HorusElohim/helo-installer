@@ -2,7 +2,7 @@
 
 import sys, getopt
 import yaml
-
+import os
 import argparse
 
 ZENITY_TEMPLATE_FILE = 'zenity_list.template'
@@ -60,7 +60,7 @@ def main(argv):
         lines = []
         for script in scripts['scripts']:
             temp_line = []
-            temp_line.append('Found')
+            temp_line.append('Found') 
             temp_line.append(script['script-path'])
             temp_line.append(script['helo-pkg'])
             temp_line.append(script['module'])
@@ -73,6 +73,10 @@ def main(argv):
         zenity_list_cmd = zenity_list_template.replace("@list_data", zenity_data)
         with open(ZENITY_LIST_SH, 'w') as fdw:
             fdw.write(zenity_list_cmd)
+        print(f'File {ZENITY_LIST_SH} updated!')
+           
+       	os.chmod(ZENITY_LIST_SH, 0o777)
+       	print(f'File {ZENITY_LIST_SH} executable flags!')
 
         with open(args.info, 'w') as fdw:
             fdw.write("Bravo you manage to find " + str(len(lines)) + " scripts")
