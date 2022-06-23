@@ -1,11 +1,15 @@
 #! /bin/bash
 
 
-sudo apt install -y git zenity zsh curl
+if [[ ! -d ../helo-installer ]]
+then
+    echo "Cloning repository"
+    git clone https://github.com/HorusElohim/helo-installer.git    
+    cd helo-installer/zenity
+else
+    cd zenity
+fi
 
-git clone https://github.com/HorusElohim/zsh-helo-installer.git
-
-cd zsh-helo-installer/zenity
 echo -e "Execute main.sh inside zenity folder"
 ./main.sh
 cd ../

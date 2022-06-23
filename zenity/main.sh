@@ -37,8 +37,6 @@ do
 
 done) | zenity --title "Installing" --progress --auto-kill
 
-say "Installation completed. Don't forget to offer a couple of coffe to"
-say_slow "Horus Elohim"
-say "Have a nice day."
+say "Installation completed"
 
 popd
